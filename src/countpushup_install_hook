@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SRC="$HOME/.local/bin"
+FILE="$SRC/countpushup_post-push"
+
+[ -d .git ] || exit 1 # not a git repo
+[ -x "$FILE" ] || exit 2 # source file missing
+
+cp "$FILE" .git/hooks/post-push
+

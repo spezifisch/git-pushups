@@ -3,12 +3,12 @@
 # Log tag
 GP="[git-pushups/countpushup]"
 # User dir to store pushup count
-CONFIG_DIR="${XDG_CONFIG_DIR:-$HOME/.config}/pushups"
+CONFIG_DIR="${CONFIG_DIR:-$HOME/.pushups}"
 # Maybe we could count other VCS, too
 COUNTER_FILE="$CONFIG_DIR/git.push"
 
 # Create the directory if it doesn't exist
-mkdir -p ~/.config/pushups
+mkdir -p "$CONFIG_DIR"
 
 # Read current count
 CURRENT_COUNT=0
