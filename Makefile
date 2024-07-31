@@ -4,7 +4,7 @@ install_hook_default: # ...in home, this applies to new repos only
 	mkdir -p ~/.git-templates/hooks
 	chmod 755 src/countpushup_post-commit
 	# we don't know what's in there, ask before overwriting
-	cp -i src/countpushup_post-commit ~/.git-templates/hooks
+	cp -i src/countpushup_post-commit ~/.git-templates/hooks/post-commit
 
 install_home_.local:
 	mkdir -p ~/.local/bin
