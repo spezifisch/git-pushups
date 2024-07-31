@@ -32,7 +32,8 @@ if [ "$1" = "reset" ]; then
 fi
 
 # Write the new count back to the file
-echo "$((CURRENT_COUNT + 1))" > "$COUNTER_FILE"
+NEW_COUNT="$((CURRENT_COUNT + 1))"
+echo "$NEW_COUNT" > "$COUNTER_FILE"
 
 echo "$GP $NEW_COUNT push-ups and counting!"
 
