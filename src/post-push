@@ -1,0 +1,11 @@
+#!/bin/bash
+
+GP="[git-pushups/post-push]"
+
+if [ ! -x "$(which countpushup)" > /dev/null ]; then
+    echo "$GP Can't count, countpushup missing from PATH"
+    exit 0
+fi
+
+countpushup $@
+
