@@ -1,4 +1,5 @@
 #!/bin/bash
+# run this script in a git repo to install the hook
 
 SRC="$HOME/.local/bin"
 FILE="$SRC/countpushup_post-commit"

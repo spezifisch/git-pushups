@@ -1,4 +1,5 @@
 #!/bin/bash
+# this is a hook from the git-pushups project
 
 GP="[git-pushups/post-push]"
 

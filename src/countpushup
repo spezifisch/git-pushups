@@ -1,11 +1,12 @@
 #!/bin/bash
+# this script count increments a counter file by 1 in a totally over-engineered way
 
 # Log tag
 GP="[git-pushups/countpushup]"
 # User dir to store pushup count
 CONFIG_DIR="${CONFIG_DIR:-$HOME/.pushups}"
 # Maybe we could count other VCS, too
-COUNTER_FILE="$CONFIG_DIR/git.push"
+COUNTER_FILE="$CONFIG_DIR/git.commit"
 
 # Create the directory if it doesn't exist
 mkdir -p "$CONFIG_DIR"
